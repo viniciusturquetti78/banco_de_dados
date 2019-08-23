@@ -36,8 +36,8 @@ update filme set diretor ='Ryan Coogler' where idfilme = 5; -- 9)
 update filme set diretor ='Jon Favreau' where idFilme = 6;  -- 10)
 update filme set diretor ='Joe Johnston' where idfilme = 11;
 
-update filme set diretor ='Fantasia/Filme de ficção científica', diretor ='Joss Whedon' where idfilme = 4;  -- 11)
-update filme set diretor ='Peyton Reed', genero = 'Suspense/Filme de ficção científica' where idfilme = 9;
+update filme set genero ='Fantasia/Filme de ficção científica', diretor ='Joss Whedon' where idfilme = 4;  -- 11)
+update filme set genero ='Suspense/Filme de ficção científica', diretor = 'Peyton Reed' where idfilme = 9;
 
 update filme set genero ='Fantasia/Filme de ficção científica' where idfilme = 5; -- 12)
 update filme set genero ='Filme de ficção científica/Thriller' where idfilme = 6;
@@ -55,7 +55,7 @@ update filme set genero ='Fantasia/Filme de ficção científica', diretor='Scot
 
 update filme set genero ='Fantasia/Filme de ficção científica', diretor='Anna Boden, Ryan Fleck' where idfilme = 8; -- 18)
 
-update filme set genero =' Fantasia/Filme de ficção científica ' where idfilme = 10; -- 19)
+update filme set genero ='Fantasia/Filme de ficção científica' where idfilme = 10; -- 19)
 
 select * from filme; -- 20)
 
@@ -78,4 +78,3 @@ select * from filme order by titulo; -- 28)
 select * from filme order by diretor;  -- 29)
 
 select * from filme order by diretor and titulo desc; -- 30)
-
