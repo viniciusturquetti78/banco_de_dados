@@ -54,3 +54,28 @@ update filme set genero ='Filme de ficção científica/Ação', diretor='Joss W
 update filme set genero ='Fantasia/Filme de ficção científica', diretor='Scott Derrickson' where idfilme = 7; -- 17)
 
 update filme set genero ='Fantasia/Filme de ficção científica', diretor='Anna Boden, Ryan Fleck' where idfilme = 8; -- 18)
+
+update filme set genero =' Fantasia/Filme de ficção científica ' where idfilme = 10; -- 19)
+
+select * from filme; -- 20)
+
+delete from filme where idfilme = 6; -- 21)
+
+delete from filme where idfilme = 11 and 5; -- 22)
+
+alter table filme add ano int(11); -- 23)
+
+select*from filme; -- 24)
+
+alter table filme modify titulo varchar(50); -- 25)
+
+describe filme; -- 26)
+
+alter table filme drop column ano; -- 27)
+
+select * from filme order by titulo; -- 28)
+
+select * from filme order by diretor;  -- 29)
+
+select * from filme order by diretor and titulo desc; -- 30)
+
